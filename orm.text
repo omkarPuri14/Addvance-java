@@ -1,0 +1,60 @@
+Eninty class
+
+@entity
+
+class Student{
+@Id
+int id;
+String name;
+String email; 
+
+// pojo
+}
+
+Main
+{
+public static void main(String args[]){
+configuration cfg=new configuration
+cfg.configure("hibernate.cfg.xml");
+cfg.addAnnotatedClass(classname.class);
+		
+
+SessionFactory sf = cfg.buildSessionFactory();
+Session ss = sf.openSession();
+Transaction t = ss.beginTransaction();
+
+Student s= new Student():
+
+s.setID(values);
+s.setName(values);
+s.setName(valuse);
+
+
+
+ss.persist(s); for data insert;
+
+Student s = ss.get(Student.class, s.getCustId());
+
+s.setName();
+s.setEmail();
+ss.update(s); for data update;
+
+
+Student s = ss.get(Student.class, s.getCustId());
+
+ss.delect(s); for data delect;
+
+Student s = ss.get(Student.class, s.getCustId());
+
+
+ss.get(s); for fetaching record
+}
+
+}
+
+
+
+            
+
+
+
